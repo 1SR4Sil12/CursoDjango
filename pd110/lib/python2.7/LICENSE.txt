@@ -1,0 +1,5 @@
+XSym
+0075
+d914aa228894da20d195d1cd746c658f
+/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/LICENSE.txt
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
