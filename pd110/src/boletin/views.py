@@ -54,7 +54,7 @@ def inicio(request):
 #		obj.save()
 
 
-	return render(request, "base.html", context)
+	return render(request, "inicio.html", context)
 
 def contact(request):
 	form = ContactForm(request.POST or None)
