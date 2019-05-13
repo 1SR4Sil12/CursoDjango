@@ -11,10 +11,10 @@ from .models import Registrado
 # Create your views here.
 
 def inicio(request):
-	titulo = "HOLA"
+	titulo = "Bienvenido"
 #	abc = "123"
 	if request.user.is_authenticated():
-		tirulo = "Bienvenido %s" %(request.user)
+		titulo = "Bienvenido %s" %(request.user)
 	form = RegModelForm(request.POST or None)
 
 	context = {
