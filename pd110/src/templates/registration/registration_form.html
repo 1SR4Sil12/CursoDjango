@@ -3,13 +3,22 @@
 {% load crispy_forms_tags %}
 	
 {% block content %}
+<div class="row">
 <div class="col-sm-6 col-sm-offset-3">
-	<h2 class="text-align-center"><strong>Registrarte</strong></h2>
+	<h2 class="text-align-center" style="margin-top: 100px;"><strong>Registrarte</strong></h2>
 <form method="post" action=".">
 	{% csrf_token %}
 	{{ form|crispy }}
 	
 	<input class="btn btn-primary" type="submit" value="{% trans 'Enviar' %}" />
 </form>
+</div>
+</div>
+
+<hr/>
+<div class='row'>
+<div class='col-sm-6 col-sm-offset-3 text-align-center'>
+<p>Ya tienes cuenta? <a href="{% url 'auth_login' %}"> Iniciar Sesión.</a></p>
+</div>
 </div>
 {% endblock %}
