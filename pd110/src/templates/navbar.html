@@ -1,10 +1,10 @@
     <!-- Fixed navbar -->
 
-    .navbar-header{
+.navbar-header{
     margin-bottom: 30px
-  }
-   
-    <nav class="navbar navbar-default navbar-fixed-top">
+}
+
+    <nav style="background-color: #172548!important;" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -13,13 +13,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">PROBAR DJANGO</a>
+          <a class="navbar-brand" href="/" style="color: white;">PROBAR DJANGO</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="{% url 'about' %}">Sobre Nosotros</a></li>
-            <li><a href="{% url 'contact' %}">Contacto</a></li>
+            <li><a href="/" style="color: #3CF4FB;">Inicio</a></li>
+            <li><a href="{% url 'about' %}" style="color: #3CF4FB;">Sobre Nosotros</a></li>
+            <li><a href="{% url 'contact' %}" style="color: #3CF4FB;">Contacto</a></li>
           <!--  <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -37,7 +37,7 @@
             {% if request.user.is_authenticated %}
             <li><a href="{% url 'auth_logout' %}">Salir</a></li>
             {% else %}
-            <li><a href="{% url 'registration_register' %}">Registrate</a></li>
+            <li><a href="{% url 'registration_register' %}" style="color: #3CF4FB;">Registrate</a></li>
             <!-- <li><a href="{% url 'auth_login' %}">Entrar</a></li> -->
             {% endif %}
           </ul>
