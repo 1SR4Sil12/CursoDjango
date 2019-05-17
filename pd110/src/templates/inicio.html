@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block head_title %}Bienvenidos | {{ block.super }}{% endblock %}
 
@@ -7,7 +8,7 @@
 {% block style %}
 .jumbotron {
 	background-color: #172548 !important;
-	color: #FFF !important;
+	/*color: #FFF !important;*/
 }
 {% endblock %}
 </style>
@@ -24,7 +25,7 @@
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Únete &raquo;</a>
         </p>
     </div>
-<div class="col-sm-6" style='background-color:black; height:300px; margin-top: 60px; margin-bottom: 50px;'></div>
+<div class="col-sm-6" style='margin-top: 60px; margin-bottom: 50px;'><img src='{% static "img/obama_tacos.jpg" %}' class="img-responsive" /></div>
 </div>
 </div>
 </div>
