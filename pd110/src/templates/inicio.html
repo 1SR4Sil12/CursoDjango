@@ -10,6 +10,15 @@
 	background-color: #172548 !important;
 	/*color: #FFF !important;*/
 }
+
+.fa-5x{
+	font-size: 6em !important;
+}
+
+img {
+	width: 270px;
+	height: 240px;
+}
 {% endblock %}
 </style>
 
@@ -25,7 +34,7 @@
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Únete &raquo;</a>
         </p>
     </div>
-<div class="col-sm-6" style='margin-top: 60px; margin-bottom: 50px;'><img src='{% static "img/obama_tacos.jpg" %}' class="img-responsive" /></div>
+<div class="col-sm-6" style='margin-top: 60px; margin-bottom: 50px;'><iframe width="560" height="315" src="https://www.youtube.com/embed/ChSvnSv_3aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 </div>
 </div>
 </div>
@@ -48,13 +57,19 @@
 		</form>
 	</div>
 <div class="col-sm-3">
-	<p class="lead text-align-center">Creado con Django &amp; Bootstrap.</p>
+	<p class="lead text-align-center">Creado con Django &amp; Bootstrap.<br/><br/><span class="fa-stack fa-5x">
+		<i class="fa fa-circle-o-notch fa-stack-2x"></i>
+		<i class="fa fa-bullhorn fa-stack-1x"></i>
+	</span></p>
 </div>
 <div class="col-sm-3">
-	<p class="lead text-align-center">Y con mucho amor, claro.</p>
+	<p class="lead text-align-center">Y con mucho amor, claro.</p><img src='{% static "img/obama_tacos.jpg" %}' class="img-responsive" />
 </div>
 <div class="col-sm-3">
-	<p class="lead text-align-center">Código abierto, siempre.</p>
+	<p class="lead text-align-center">Código abierto, siempre.<br/><br/><span class="fa-stack fa-5x">
+		<i class="fa fa-spinner fa-spin fa-stack-2x"></i>
+		<i class="fa fa-font-awesome fa-stack-1x"></i>
+	</span></p>
 </div>
 </div>
 
