@@ -14,7 +14,7 @@ def inicio(request):
 	titulo = "Bienvenido"
 #	abc = "123"
 	if request.user.is_authenticated():
-		titulo = "Bienvenido %s" %(request.user)
+		titulo = "Bienvenid@ %s" %(request.user)
 	form = RegModelForm(request.POST or None)
 
 	context = {
@@ -53,7 +53,10 @@ def inicio(request):
 #		obj.email = abc
 #		obj.save()
 
-
+	if request.user.is_authenticated() and request.user.is_staff:
+		context = {
+			"queryset": ['abc', '123'],
+		}
 	return render(request, "inicio.html", context)
 
 def contact(request):
