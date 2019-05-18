@@ -25,7 +25,11 @@ img {
 {% block jumbotron %}
 
 {% if request.user.if_staff %}
-{{ queryset }}
+<table class="table">
+{% for instance in queryset %}
+<tr><td>{{ forloop.counter }}</td><td>{{ instance }}</td><td>{{ instance.nombre }}</td><td>hace {{ instance.timestamp|timesince }}</td></tr><br/>
+{% endfor %}
+</table>
 {% else %}
 
 <div class="jumbotron">
@@ -63,7 +67,8 @@ img {
 		<input class="btn btn-primary" type='submit' value='Enviar' />
 		</form>
 		{% else %}
-		<p class="lead text-align-center">{{ titulo }} <br/><br/><br/><i class="fa fa-hand-peace-o fa-5x" aria-hidden="true"></i></p>
+		<p class="lead text-align-center">{{ titulo }} <br/><br/><br/><i class="fa fa-hand-peace-o fa-5x" aria-hidden="true"></i>
+		</p>
 		{% endif %}
 	</div>
 <div class="col-sm-3">
